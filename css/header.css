@@ -2,9 +2,11 @@
   position: relative;
   background: #0d3f7a;
   z-index: 9999;
-}
-.header .inner {
   height: 130px;
+}
+.header-inner {
+  margin: 0 auto;
+  max-width: 1920px;
 }
 .header-fix {
   position: fixed !important;
@@ -14,7 +16,84 @@
   width: 100%;
 }
 
-/* 상단메뉴 스크롤 시 고정 테스트 */
-body {
-  height: 5000px;
+.header-top{
+  padding-right: 200px;
+  height:40px;
+  background: #11244c;
+}
+.header-top ul{
+  padding: 10px 0;
+  /* margin-right: 50px; */
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header-top ul li {
+  padding: 0 15px;
+  position: relative;
+}
+.header-top li::after {
+  position: absolute;
+  top: 3px;
+  right: 0;
+  display: block;
+  content: "";
+  width: 1px;
+  height: 11px;
+  background: #fff;
+}
+.header-top ul li a{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  display: block;
+
+}
+.header-main .header-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-main-logo{
+  padding: 16px 0;
+  width: 194px;
+  height: 38px;
+  background: url("../images/img-logo-on-2023.svg") no-repeat center;
+}
+.header-main-gnb {
+  padding-top: 30px;
+
+}
+
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.main-menu li {
+  padding-right: 90px;
+  padding-bottom: 30px;
+
+}
+.main-menu li a { 
+  color: #fff;
+  font-size: 19px;
+}
+.header-main-icon {}
+.header-main-side {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  padding: 30px;
+  background: #caae78 url("../images/ico-quick.png") no-repeat center/20px;
+}
+.header-main-side p {
+  position: absolute;
+  left: 25px;
+  bottom: 15px;
+  font-size: 15px;
+  color: #0d3f7a;
+  font-weight: 500;
 }
