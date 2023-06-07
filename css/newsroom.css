@@ -1,0 +1,64 @@
+.newsroom{}
+.newsroom .inner{
+  max-height: 1310px;
+  padding-top: 35px;
+  padding-bottom: 135px;
+
+}
+.newsroom h2 {
+  display: block;
+  font-size: 38px;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+  margin: 10px;
+}
+.newsroom p {
+  display: block;
+  font-size: 17px;
+  font-weight: 200;
+  color: #444;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.newsroom-wrap {
+  position: relative;
+  /* overflow: hidden; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+
+
+.newsroom-box {
+  display: block;
+  overflow: hidden;
+  height: 450px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  border: 10px solid transparent;
+}
+.newsroom-box:hover {
+  border: 10px solid #1976d2;
+}
+
+.newsroom-img{
+  height: 330px;
+}
+.newsroom-img img{
+  height: 100%;
+  object-fit: cover;
+  object-position:  center;
+  
+}
+
+.newsroom-info{
+  padding: 18px 20px;
+}
+
+.newsroom-info p{
+  font-size: 20px;
+  font-weight: 500;
+}
+.newsroom-info span {}

@@ -16,15 +16,15 @@
   width: 100%;
 }
 
-.header-top{
+.header-top {
   padding-right: 200px;
-  height:40px;
+  height: 40px;
   background: #11244c;
 }
-.header-top ul{
+.header-top ul {
   padding: 10px 0;
   /* margin-right: 50px; */
-  display:flex;
+  display: flex;
   justify-content: flex-end;
   align-items: center;
 }
@@ -42,20 +42,19 @@
   height: 11px;
   background: #fff;
 }
-.header-top ul li a{
+.header-top ul li a {
   color: #fff;
   font-size: 14px;
   font-weight: 300;
   display: block;
-
 }
-.header-main .header-inner{
+.header-main .header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header-main-logo{
+.header-main-logo {
   padding: 16px 0;
   width: 194px;
   height: 38px;
@@ -63,25 +62,23 @@
 }
 .header-main-gnb {
   padding-top: 30px;
-
 }
 
 .main-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 .main-menu li {
   padding-right: 90px;
   padding-bottom: 30px;
-
 }
-.main-menu li a { 
+.main-menu li a {
   color: #fff;
   font-size: 19px;
 }
-.header-main-icon {}
+.header-main-icon {
+}
 .header-main-side {
   position: relative;
   width: 90px;
@@ -92,8 +89,51 @@
 .header-main-side p {
   position: absolute;
   left: 25px;
-  bottom: 15px;
+  bottom: 18px;
   font-size: 15px;
   color: #0d3f7a;
   font-weight: 500;
+}
+
+.header-main-icon {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+gap: 0 30px;
+}
+
+
+.header-search img{
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+.header-menubt {
+  position: relative;
+}
+.header-menubt span {
+  display: block;
+  content: "";
+  width: 30px;
+  height: 3px;
+  background: #fff;
+}
+.header-menubt span::before {
+  position: absolute;
+  top: -10px;
+  display: block;
+  content: "";
+  width: 30px;
+  height: 3px;
+  background: #fff;
+}
+.header-menubt span::after {
+  position: absolute;
+  top: 10px;
+  display: block;
+  content: "";
+  width: 30px;
+  height: 3px;
+  background: #fff;
 }

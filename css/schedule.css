@@ -1,0 +1,9 @@
+.schedule{
+  background: #eef5fe;
+  /* background: gray; */
+  height: 400px;
+  padding: 150px 0 90px 0;
+}
+.schedule .inner{}
+
+.schedule-wrap{}
