@@ -8,26 +8,47 @@
 .news .inner {
   padding: 70px 0px;
 }
+/* 탭메뉴가 출렁거리는 걸 방지하기 위해 높이값을 준다 */
+/* 탭메뉴의 html순서와 탭내용의 html태그 순서를 일치시킨다 */
+/* 
+a:nth-child(1) div:nth-child(1) 
+a:nth-child(2) div:nth-child(2) 
+a:nth-child(3) div:nth-child(3) 
+a:nth-child(4) div:nth-child(4)
+*/
 
 .news-wrap {
+  height: 635px;
+  margin-top: 190px;
+  margin-bottom: 70px;
+  background: tan;
 }
 
 .news-top {
 }
 .news-top h2 {
-  font-size: 42px;
+  font-size: 38px;
+  font-weight: 500;
   color: #fff;
+  text-align: center;
 }
 .news-top p {
+  font-size: 17px;
+  font-weight: 200;
   color: #fff;
+  text-align: center;
 }
 
 .news-main {
 }
 
 .news-tabmenu {
+  text-align: center;
+  padding: 20px;
 }
 .news-tabmenu a {
+  display: inline-block;
+  padding: 5px;
   color: #fff;
 }
 
@@ -35,14 +56,26 @@
   color: lightblue;
 }
 
+/* 탭 내용 자리 */
 .news-tabcon {
-
+  position: relative;
 }
-.news-tabcon div {
+
+/* 탭내용을 한자리 고정 : 레이아웃이 흔들리는걸 방지 */
+.news-tabcon > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 50px;
   background: #fff;
+  /* 내용은 한개씩만 보여야 하므로 일단 display를 가린다 */
+  /* swiper의 slide는 display:none;이면 작동이 안됨 */
+  display: none;
 
 }
-
-.news-tabcon.news-con-active {
+/* 포커스 클래스가 적용된 내용은 보여진다 */
+.tab-con-active {
   color: lightcoral;
+  display: block !important;
 }
