@@ -251,6 +251,7 @@ window.addEventListener("load", function (event) {
 */
 
 //JQuery
+
 $(document).ready(function () {
   // 슬라이드 코드
   // display:none 에러처리
@@ -260,6 +261,7 @@ $(document).ready(function () {
       delay: 1000,
       disableOnInteraction: false,
     },
+    // display:none일때도 스와이퍼 작동하도록 만드는 기능
     observer: true,
     observeParents: true,
   });
